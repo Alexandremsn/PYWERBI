@@ -10,4 +10,10 @@ assim pode ser utilizado outra metodologia, mas a mais simples seria usar esta d
 
 Faça o download e instale de forma padrão.
 
+Agora no Power BI vamos na aba configurações
+
+Arquivo>Opções e Configurações>Opçoes>Scripts do Python
+
+
+
 continua...
