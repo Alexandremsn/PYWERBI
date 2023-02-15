@@ -1,6 +1,40 @@
 # PYWERBI
 Scripts Python no Power BI
 
+
+
+
+
+continua...
+
+
+
+<div align="center">
+<img src="images/clipart867608.png" width="150">
+
+# Dashboard Comercial Hipotética Natural(readme em construção)
+
+<div align="left">
+Criação de um Dashboard Simples com Power BI, utilizando um dos gráficos criados no python para uma maior personalização e uso de elementos não presentes nos gráficos padrão do Power BI. 
+
+
+## Tecnologia
+
+Os softwares  usados neste projeto foram:
+
+* Microsoft Power BI
+
+## Serviços Usados
+
+* Github
+* Google Colab
+
+
+
+## Como foi feito
+
+Será descrito abaixo através de textos e imagens.
+
 Infelizmente o jeito mais fácil de integrar os dois é utilizando a distribuição Anacoda do python:
 
 https://www.anaconda.com/
@@ -13,7 +47,33 @@ Faça o download e instale de forma padrão.
 Agora no Power BI vamos na aba configurações
 
 Arquivo>Opções e Configurações>Opçoes>Scripts do Python
+  
+<img src=images/PYBI_001.png>
 
 
+### Em Contrução
+ 
+## Recursos Usados
 
-continua...
+  - Construção de uma consulta SQL
+  - Crianção de um template
+  - Criação de botões personalizados
+  - Criação de visuais
+  - Criação de indicadores
+  - Construção de um dashboard para atender as necessidades do cliente
+  
+
+## Links
+
+  - Repositório: https://github.com/Alexandremsn/Dash_Comercial
+  - Se for encontrado um bug, favor entrar em contato alexandremsneto1986@gmail.com
+
+
+## Versão
+
+1.0.0.0
+
+
+## Autor
+
+* **Alexandre Machado da Silva Neto**: @alexandremsn (https://github.com/alexandremsn)
