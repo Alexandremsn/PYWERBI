@@ -48,8 +48,17 @@ Agora no Power BI vamos na aba configurações
 
 Arquivo>Opções e Configurações>Opçoes>Scripts do Python
   
+verificamos se o caminho está como a distribuição do anaconda.
+  
 <img src=images/PYBI_001.png>
-
+  
+ ambiente configurado vamos carregar uns dados...
+ 
+ eu utilizei dados desta fonte: https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx
+  
+ após carregar os dados podemos começar a construir nosso dashboard.
+ 
+ 
 
 ### Em Contrução
  
