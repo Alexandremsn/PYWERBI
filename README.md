@@ -1,5 +1,5 @@
 # PYWERBI
-Scripts gráficosd do Python no Power BI
+Scripts gráficos do Python no Power BI
 
 
 
@@ -82,7 +82,9 @@ ao final devem aparecer as bibliotecas intaladas.
 Fiz um teste e usei o script abaixo para gerar um gráfico de histograma bem simples só para testar se as configurações foram feitas corretamente.
 
 import matplotlib.pyplot as plt
+  
 plt.hist(dataset['Sales Amount'])
+  
 plt.show()
 
 
