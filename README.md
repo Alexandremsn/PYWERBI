@@ -3,14 +3,8 @@ Scripts gráficos do Python no Power BI
 
 
 
-
-
-continua...
-
-
-
 <div align="center">
-<img src="images/clipart867608.png" width="150">
+<img src="images/logopyerbi.png" width="150">
 
 # Como Criar gráficos do python no Power BI
 
@@ -87,23 +81,65 @@ plt.hist(dataset['Sales Amount'])
   
 plt.show()
 
+Tivemos um problema com a data pois estava em um formato que o power bi não conseguia ler assim aplicamos uma linha calculada com um código de manupulação de texto para tranformar a coluna em uma coluna de data usamdo o código abaixo:
+  
+Order_date = concatenate(left(right(Sales[OrderDateKey],4),2),concatenate("-",concatenate(right(Sales[OrderDateKey],2),concatenate("-",left(Sales[OrderDateKey],4)))))  
+a data estava no formato 20170714
+  
+assim inserimos separadores ficando com o texto 2017-07-14
+Agora inserimos nosso script principal um gráfico de dispersão com uma linha indicando os outliers,
+  
+<img src=images/PYBI_004a.png>
+  
+Usamos o script abaixo para criar o gráfico de disperção com linha de outliers:
+  
+import seaborn as sns
+  
+import matplotlib.pyplot as plt
+  
+import pandas as pd
+  
+import numpy as np
+  
+Q1 = np.quantile(dataset['Sales Amount'], 0.25)
+  
+Q2 = np.quantile(dataset['Sales Amount'], 0.5)
+  
+Q3 = np.quantile(dataset['Sales Amount'], 0.75)
+  
+lower_limit = Q1 - (1.5 * (Q3-Q1))
+  
+upper_limit = Q3 + (1.5 * (Q3-Q1))
+  
+dataset['Mes_Ano'] = (dataset['Mês'].astype(str)+"-"+dataset['Ano'].astype(str))
+  
+plt.figure(figsize=(9,9))
+  
+sns.scatterplot(data=dataset,x=dataset['Mes_Ano'],y=dataset['Sales Amount'])
+  
+plt.axhline(y=upper_limit)
+  
+locs, labels = plt.xticks()
+  
+plt.setp(labels, rotation=45)
+  
+plt.show()  
 
+<img src=images/PYBI_005.png>
 
-### Em Contrução
+finalmente temos nosso gráfico.
  
 ## Recursos Usados
 
-  - Construção de uma consulta SQL
-  - Crianção de um template
-  - Criação de botões personalizados
-  - Criação de visuais
-  - Criação de indicadores
-  - Construção de um dashboard para atender as necessidades do cliente
+  - Importação de dados
+  - Crianção de uma coluna calculada com DAX
+  - Criação de um visual com script em python
+  
   
 
 ## Links
 
-  - Repositório: https://github.com/Alexandremsn/Dash_Comercial
+  - Repositório: https://github.com/Alexandremsn/PYWERBI
   - Se for encontrado um bug, favor entrar em contato alexandremsneto1986@gmail.com
 
 
