@@ -8,7 +8,7 @@ Scripts gráficos do Python no Power BI
 
 # Como Criar gráficos do python no Power BI
 
-as vezes os gráficos do power bi não apresentam um grau de personalização satisfatório, e recorremos a soluções não convencionais, assim os gráficos do python são altamente personalizáveis, um exemplo que tive que lidar foi inserir uma linha de corte para vizualizar mais facilmente os outliers em um gráfico de disperção isso com o setup padão do power bi não é possível usando as configurações padrão do visual, mas, no python é possível, assim podemos usar os gráficos do python para preencher este gap.
+As vezes os gráficos do power bi não apresentam um grau de personalização satisfatório, e recorremos a soluções não convencionais, assim os gráficos do python são altamente personalizáveis, um exemplo que tive que lidar foi inserir uma linha de corte para vizualizar mais facilmente os outliers em um gráfico de disperção isso com o setup padão do power bi não é possível usando as configurações padrão do visual, mas, no python é possível, assim podemos usar os gráficos do python para preencher este gap.
 
 <div align="left">
 Criação de um Dashboard Simples com Power BI, utilizando um dos gráficos criados no python para uma maior personalização e uso de elementos não presentes nos gráficos padrão do Power BI. 
@@ -89,7 +89,7 @@ a data estava no formato 20170714
 assim inserimos separadores ficando com o texto 2017-07-14
 Agora inserimos nosso script principal um gráfico de dispersão com uma linha indicando os outliers,
   
-<img src=images/PYBI_004a.png>
+<img src=images/PYBI_004b.png>
   
 Usamos o script abaixo para criar o gráfico de disperção com linha de outliers:
   
